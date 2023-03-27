@@ -93,6 +93,7 @@ namespace ValheimPlus
             }
             catch (Exception e)
             {
+                ZLog.LogError(e);
                 return null;
             }
             return reply;

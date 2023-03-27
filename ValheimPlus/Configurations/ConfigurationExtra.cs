@@ -50,7 +50,9 @@ namespace ValheimPlus.Configurations
                         // get the current versions ini data
                         compareIni = ValheimPlusPlugin.getCurrentWebIniFile();
                     }
-                    catch (Exception e) { }
+                    catch (Exception e) {
+                        Debug.LogError($"GetWebIni exception: {e}");
+                    }
 
                     if (compareIni != null)
                     {
@@ -83,7 +85,10 @@ namespace ValheimPlus.Configurations
                             status = true;
                         }
                     }
-                    catch (Exception e) { }
+                    catch (Exception e)
+                    {
+                        Debug.LogError($"Config file load exception: {e}");
+                    }
 
                     return status;
                 }

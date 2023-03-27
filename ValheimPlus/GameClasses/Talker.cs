@@ -1,12 +1,5 @@
 ﻿using HarmonyLib;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
-using UnityEngine;
 using ValheimPlus.Configurations;
-using HarmonyLib;
 
 namespace ValheimPlus.GameClasses
 {
